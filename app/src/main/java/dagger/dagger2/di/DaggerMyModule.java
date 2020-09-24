@@ -1,19 +1,15 @@
-package dagger.dagger2;
+package dagger.dagger2.di;
 
 import javax.inject.Named;
 import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
+import dagger.dagger2.SampleClass;
 
 @Module
-class DaggerMyModule {
+public class DaggerMyModule {
 
-    /*@Provides
-    public SampleInterface getInterfaceInst()
-    {
-        return new Sa
-    }*/
     @Provides
     @Named("NonSingleTon")
     public SampleClass getNonSingleTonSampleClassInstance() {

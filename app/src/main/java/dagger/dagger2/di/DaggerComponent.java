@@ -1,4 +1,4 @@
-package dagger.dagger2;
+package dagger.dagger2.di;
 
 import javax.inject.Singleton;
 
@@ -11,7 +11,8 @@ import dagger.Component;
 @Singleton
 @Component(modules = {DaggerMyModule.class})
 public interface DaggerComponent {
-    void inject(MainActivity mainActivity);
+    //void inject(MainActivity mainActivity);
 
-    void inject(Main2Activity main2Activity);
+    //void inject(Main2Activity main2Activity);
+    //void inject(LoginActivity loginActivity);
 }
